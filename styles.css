@@ -35,4 +35,15 @@ body {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
     margin: 10px;
+    background-size: cover;
+}
+.card-image {
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size:cover; 
+}
+
+.card-1 {
+background-image: url("pexels-cottonbro-8382614.jpg");
 }
