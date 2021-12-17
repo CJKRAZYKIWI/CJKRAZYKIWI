@@ -57,3 +57,13 @@ background-image: url("pexels-cottonbro-8382614.jpg");
 .card-4{
     background-image: url("pexels-andrea-piacquadio-716411.jpg");
 }
+a {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: none;
+   
+}
+
+ul {
+    list-style: none;
+}
