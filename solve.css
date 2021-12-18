@@ -29,8 +29,24 @@ body {
     position:relative;
     z-index: 0;
 }
+.directions {
+  display:fixed;
+  align-items: center;
+  justify-content: center;
+    z-index: 2;
+    
+
+}
+
+h1{
+    font-weight: 600;
+    text-align:center;
+    
+    color:whitesmoke;
+    
+}
 .ks-cboxtags{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top:0;
     left:0;
@@ -39,7 +55,7 @@ body {
 
 ul.ks-cboxtags {
     list-style: none;
-    padding: 20px;
+    padding: 100px;
 }
 ul.ks-cboxtags li{
   display: inline;
