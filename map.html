@@ -44,7 +44,7 @@
 
   var searchControl = L.esri.Geocoding.geosearch({
     position: 'topright',
-    placeholder: 'Enter an address or place e.g. 1 York St',
+    placeholder: 'Goodluck Detective: Take good notes',
     useMapBounds: false,
     providers: [L.esri.Geocoding.arcgisOnlineProvider({
       apikey:'AAPKd129141e26ce4dd5be3d1aeed6b73875332VLm6OqKGj4hcCjZQdIDkHXazDVLtY2gvVgEZsdp4fb5cDcUF0TA-lf6EJHia5' , // replace with your api key - https://developers.arcgis.com
@@ -63,6 +63,11 @@
       results.addLayer(L.marker(data.results[i].latlng));
     }
   });
+
+  L.marker([36.155440300334156, -115.14850152782375]).addTo(map)
+    .bindPopup('Where the gun was found')
+    .openPopup();
+
 </script>
 
 </body>
