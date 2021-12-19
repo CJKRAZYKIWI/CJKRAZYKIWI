@@ -1,13 +1,13 @@
-const form = document.querySelector('form');
+function getSelectedCheckboxValues(name) {
+  const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+  let values = [];
+  checkboxes.forEach((checkbox) => {
+      values.push(checkbox.value);
+  });
+  return values;
+}
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-
-  const values = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
-    .map(item => item.value)
-    .join(',');
-
-  console.log(`clicked on ?${values}`);
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', (event) => {
+  alert("This is correct:"+ getSelectedCheckboxValues('correct'));
 });
-
-

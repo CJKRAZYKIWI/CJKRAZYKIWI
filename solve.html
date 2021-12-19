@@ -16,12 +16,12 @@
                  </div>
                  <form> 
             <ul class="ks-cboxtags">
-              <li><input type="checkbox" id="checkboxOne" value="innocent"><label for="checkboxOne">Tony is innocent</label></li>
-              <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label for="checkboxTwo">Cotton Candy</label></li>
-              <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label for="checkboxThree">Rarity</label></li>
+              <li><input name="correct" type="checkbox" id="checkboxOne" value="innocent"><label for="checkboxOne">Tony is innocent</label></li>
+              <li><input name="correct" type="checkbox" id="checkboxTwo" value="Cotton Candy" ><label for="checkboxTwo">Tony is guilty</label></li>
+              <li><input name="correct" type="checkbox" id="checkboxThree" value="Rarity" ><label for="checkboxThree">Rarity</label></li>
               <li><input type="checkbox" id="checkboxFour" value="Moondancer"><label for="checkboxFour">Moondancer</label></li>
               <li><input type="checkbox" id="checkboxFive" value="Surprise"><label for="checkboxFive">Surprise</label></li>
-              <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle" checked><label for="checkboxSix">Twilight
+              <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle"><label for="checkboxSix">Twilight
                               Sparkle</label></li>
               <li><input type="checkbox" id="checkboxSeven" value="Fluttershy"><label for="checkboxSeven">Fluttershy</label></li>
               <li><input type="checkbox" id="checkboxEight" value="Derpy Hooves"><label for="checkboxEight">Derpy Hooves</label></li>
@@ -35,9 +35,11 @@
               <li><input type="checkbox" id="checkboxFourteen" value="Medley"><label for="checkboxFourteen">Medley</label></li>
               <li><input type="checkbox" id="checkboxFifteen" value="Firefly"><label for="checkboxFifteen">Firefly</label></li>
             </ul>
-            <input button type= "submit">SOLVE</button>
+            <button id= "btn" >SOLVE</button>
         </form>
-          
+          <div id= "results">
           </div>
+          </div>
+          <script src= "script.js"></script>
     </body>
 </html>
