@@ -110,3 +110,7 @@ a:hover {
     left: 0;
     font-size: 1.5em;
 }
+
+.countdown {
+    float:left;
+}
